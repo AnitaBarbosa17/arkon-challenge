@@ -2,7 +2,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
-    "build": "cross-env TAILWIND_MODE=build vite build",
+    "deploy": "cross-env TAILWIND_MODE=build vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
