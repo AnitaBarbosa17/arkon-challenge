@@ -1,13 +1,9 @@
-# template-vite-js-tailwind-v3
-
--   **template of:** vite + vanilaJS
--   **tailwindcss:** v3.x
+# Challenge para vacante ArkonData
 
 ## Started
 
 ```bash
-yarn
-# or `npm install`
+npm install
 ```
 
 ---
@@ -15,8 +11,7 @@ yarn
 ## Develop
 
 ```bash
-yarn dev
-# or `npm run dev`
+npm run dev
 ```
 
 ---
@@ -24,6 +19,5 @@ yarn dev
 ## Build
 
 ```bash
-yarn build
-# or `npm run build`
+npm run build
 ```
