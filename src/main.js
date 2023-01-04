@@ -3,6 +3,8 @@ import Swal from 'sweetalert2';
 
 const $form = document.getElementById('form');
 const $btn = document.getElementById('btn-submit');
+const $loaderContainer = document.querySelector('.loader-container');
+
 
 // Functions
 function emailSuccess() {
@@ -36,6 +38,10 @@ function handleSubmit(event) {
 
 // Events
 $form.addEventListener('submit', handleSubmit);
+
+window.addEventListener('load', () => {
+    $loaderContainer.parentElement.removeChild($loaderContainer);
+});
 
 // Trick for smoothScroll
 window.smoothScroll = function(target) {
