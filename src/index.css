@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Display";
+	src: url("./assets/fonts/SFNS-Display-Regular.ttf");
+	font-weight: medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Display-Thin";
+	src: url("./assets/fonts/SFNS-Display-Thin.ttf");
+	font-weight: lighter;
+	font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+	@apply transition-all;
+}
+
+.discover-bg {
+	background-image: url("./assets/img/section-bg-02.png");
+	background-position-y: bottom;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.triangle-bg {
+	background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #EFEFEF 50%, #EFEFEF 100%);
+}
+.triangle-bg.triangle-bg-inside {
+	background: none;
+}
+.gradient-bg {
+	background: linear-gradient(312.51deg, #3DC0CB 0%, #0AA4D9 22.04%, #0F4B90 82.79%, #122336 100%);
+}
+
+@media screen and (max-width: 768px){
+	.discover-bg {
+		background-position-x: 48%;
+	}
+	.triangle-bg{
+		background:none;
+	}
+	.triangle-bg.triangle-bg-inside {
+		background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #EFEFEF 50%, #EFEFEF 100%);
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.discover-bg {
+		background-position-x: 48%;
+		background-position-y: 85%;
+	}
+}
